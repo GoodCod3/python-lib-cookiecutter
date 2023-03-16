@@ -1,6 +1,6 @@
 import unittest
 
-from {{cookiecutter.project_name}}.module1 import add
+from {{cookiecutter.project_name_slug}}.module1 import add
 
 
 class AddTestSuite(unittest.TestCase):
@@ -9,4 +9,3 @@ class AddTestSuite(unittest.TestCase):
         expected_result = 4
 
         self.assertEqual(result, expected_result)
-

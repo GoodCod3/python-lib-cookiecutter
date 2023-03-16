@@ -2,7 +2,7 @@ PYTHON=python
 TWINE=twine
 
 test:
-	poetry run ${PYTHON} -m unittest discover {{cookiecutter.project_name}}/ "test_*.py"
+	poetry run ${PYTHON} -m unittest discover {{cookiecutter.project_name_slug}}/ "test_*.py"
 
 lint:
 	poetry run flake8

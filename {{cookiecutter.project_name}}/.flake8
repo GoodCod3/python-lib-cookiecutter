@@ -8,6 +8,6 @@ exclude =
     venv,
     .venv/*,
     .env,
-    {{cookiecutter.project_name}}.egg-info/*
+    {{cookiecutter.project_name_slug}}.egg-info/*
     build/
     dist/
