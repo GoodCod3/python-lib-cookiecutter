@@ -1,0 +1,6 @@
+*.pyc
+node_modules
+build
+dist
+{{cookiecutter.project_name}}.egg-info
+__pycache__

@@ -1,0 +1,51 @@
+image: python:3.8
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Test and lint
+          caches:
+            - "pip"
+          script:
+            - apt-get update && apt-get install -y make
+            - pip install poetry
+            - poetry install
+            - make lint
+            - make isort
+            - make test
+
+  pull-requests:
+    "**":
+      - step:
+          name: Test and lint
+          caches:
+            - "pip"
+          script:
+            - apt-get update && apt-get install -y make
+            - pip install poetry
+            - poetry install
+            - make lint
+            - make isort
+            - make test
+  tags:
+    "v[0-9]+.[0-9]+.[0-9]+":
+      - step:
+          name: Test and lint
+          caches:
+            - "pip"
+          script:
+            - apt-get update && apt-get install -y make
+            - pip install poetry
+            - poetry install
+            - make lint
+            - make isort
+            - make test
+      - step:
+          name: Deploy
+          caches:
+            - "pip"
+          script:
+            - pip install poetry
+            - poetry build
+            - poetry publish
