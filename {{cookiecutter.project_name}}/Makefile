@@ -10,6 +10,9 @@ lint:
 isort:
 	poetry run  isort . --check-only
 
+freeze-dependencies:
+	poetry export -f requirements.txt --output requirements.txt --without-hashes
+
 release-major:
 	@poetry version major && \
 	echo "Publicando versión $$(poetry version --no-interaction | cut -d ' ' -f 2)" && \
