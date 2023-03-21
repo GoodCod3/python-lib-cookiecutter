@@ -29,7 +29,7 @@ pipelines:
             - make isort
             - make test
   tags:
-    "v[0-9]+.[0-9]+.[0-9]+":
+    "v*.*.*":
       - step:
           name: Test and lint
           caches:
