@@ -10,6 +10,12 @@ lint:
 isort:
 	poetry run  isort . --check-only
 
+isort-fix:
+	poetry run  isort .
+
+pre-commit:
+	pre-commit run --all-files
+
 freeze-dependencies:
 	poetry export -f requirements.txt --output requirements.txt --without-hashes
 
