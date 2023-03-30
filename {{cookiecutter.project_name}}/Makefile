@@ -1,5 +1,4 @@
 PYTHON=python
-TWINE=twine
 
 test:
 	poetry run ${PYTHON} -m unittest discover {{cookiecutter.project_name_slug}}/ "test_*.py"
