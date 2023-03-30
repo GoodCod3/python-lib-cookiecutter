@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ms-tiber-com-lib-template
+  description: Cookicutter template for new Python libraries
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - tiber
+  
+spec:
+  type: service
+  lifecycle: development
+  owner: tiber-team
