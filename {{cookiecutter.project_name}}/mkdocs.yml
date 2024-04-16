@@ -1,7 +1,0 @@
-site_name: 'Template Documentation'
-
-nav:
-  - Home: index.md
-
-plugins:
-  - techdocs-core

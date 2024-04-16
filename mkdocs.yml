@@ -1,7 +1,0 @@
-site_name: 'Documentación de ms-tiber-com-lib-template'
-
-nav:
-  - Home: index.md
-
-plugins:
-  - techdocs-core
