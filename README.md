@@ -2,7 +2,7 @@
 
 ## Clone template repository
 ```bash
-git clone git@bitbucket.org:i2tic/ms-tiber-com-lib-template.git
+git clone ... python-lib-cookiecutter/
 ```
 
 ## Install cookiecutter dependency
@@ -13,6 +13,6 @@ pip install cookiecutter
 
 ## Create new python library from template
 ```bash
-cookiecutter ms-tiber-com-lib-template/
+cookiecutter python-lib-cookiecutter/
 ```
 This command will ask a series of questions from the CLI to create the service.
